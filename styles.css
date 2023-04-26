@@ -1,0 +1,182 @@
+:root{
+    --color-boton:#596D48;
+    --input-defecto:#E5E7EB;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'locky';
+    src: url('./Norse-Bold.otf');
+}
+body{
+    font-family: 'locky';
+}
+p, a{
+    color: #fff;
+}
+.content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+/* fondo */
+.picture{
+    height: 100%;
+    width: 30%;
+    background-image: url('./fondo.jpg!w700wp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-Img{
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+.content-Img img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-Img h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+
+.rigth{
+    width: 70%;
+    height: 100%;
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+.left{
+    padding-left: 1vw;
+}
+.dummy-text{
+    padding-top:10px ;
+    width: 100%;
+    font-size: 2vw;
+
+}
+.dummy-text .remote-text{
+    margin: 30px 0;
+}
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(139, 137, 137, 0.4);
+    width: 100%;
+    background-color: #050505;
+}
+.form h3{
+    font-size: 2vw;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 100%;
+    color: #fff;
+}
+.form .input{
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+    opacity: 50%;
+    margin-left: 30px;
+}
+input{
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid var(--input-defecto);
+    height: 28px;
+    margin-top: 5px;
+    color: #fff;
+
+}
+.input label{
+    color: #fff;
+}
+
+input:valid{
+    outline: 2px solid rgb(46, 165, 9);
+    border: none;
+}
+input:focus{
+    outline: 2px solid rgb(6, 116, 206);
+    border: none;
+}
+
+.boton{
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.boton button{
+    border: none;
+    background-color: transparent;
+    height: 40px;
+    width: 150px;
+    border: 3px solid rgb(86, 12, 88);
+    color: rgb(86, 12, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 16px;
+    transition: all 200ms;
+}
+.boton button:hover{
+    background-color: rgb(86, 12, 88);
+    color: #000;
+}
+.long-in{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.long-in > p{
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+.long-in a{
+    text-decoration: none;
+    color: rgb(86, 12, 88);
+    font-weight: 900;
+    text-transform: lowercase;
+    font-size: 16px;
+    margin-left: 6px;
+    letter-spacing: 2px;
+    transition: all 200ms;
+}
+
+.long-in a:hover{
+    color: #fff;
+}

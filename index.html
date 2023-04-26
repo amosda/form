@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- LEFT -->
+  <div class="content">
+    <div class="picture">
+      <div class="content-Img">
+        <img src="./odin-lined.png" alt="">
+        <h1>ODIN</h1>
+      </div>
+    </div>
+
+    <div class="rigth">
+      <div class="dummy-text left">
+        <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p class="remote-text">You <em>know</em> you want to.</p>
+      </div>
+   
+      <form action="#">
+        <div class="form left">
+          <h3>Lets do you this!</h3>
+          <div class="input">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"  required>
+          </div>
+
+          <div class="input">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="epellido"  required>
+          </div>
+
+          <div class="input">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo"  required>
+          </div>
+
+          <div class="input">
+            <label for="phone-number">numero</label>
+            <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9" title="Error ingresa un numero" required >
+          </div>
+
+          <div class="input">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña"  required>
+          </div>
+
+          <div class="input">
+            <label for="contraseña">confirmar constraseña</label>
+            <input type="password" id="contraseña" name="contraseña"  required>
+          </div>
+
+        </div>
+        <div class="boton">
+          <button class="long-in left" type="submit">sing up</button>
+        </div>
+      </form>
+      <div class="long-in">
+        <p>Already have an account? <a href="#">Long in</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
